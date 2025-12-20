@@ -297,7 +297,7 @@ export function ChatInterface({ chatId, onChatCreated }: ChatInterfaceProps) {
             </div>
           </div>
 
-          <div className="sticky bottom-0 border-t border-border bg-background/80 backdrop-blur-sm px-4 py-6">
+          <div className="stickybottom-0 border-t border-border bg-background/80 backdrop-blur-sm px-4 py-6">
             <div className="max-w-3xl mx-auto">
               <form onSubmit={handleSubmit} className="relative">
                 <Textarea

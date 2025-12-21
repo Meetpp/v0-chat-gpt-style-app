@@ -205,7 +205,7 @@ export function ChatInterface({ chatId, onChatCreated }: ChatInterfaceProps) {
             </Avatar>
           </header>
 
-          <div className="flex-1 overflow-y-auto px-4 py-6">
+          <div className="flex-1 overflow-y-auto px-4 py-6 max-height-[76vh]">
             <div className="max-w-3xl mx-auto space-y-6">
               <AnimatePresence initial={false}>
                 {messages.map((message, index) => (

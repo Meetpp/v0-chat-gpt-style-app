@@ -9,9 +9,7 @@
     "start": "next start"
     "type-check": "tsc --noEmit",
   }
-}
-
-  },
+},
   "dependencies": {
     "@ai-sdk/openai": "2.0.86",
     "@aws-sdk/credential-providers": "latest",

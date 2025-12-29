@@ -7,6 +7,11 @@
     "dev": "next dev",
     "lint": "eslint .",
     "start": "next start"
+    "type-check": "tsc --noEmit",
+    "build": "react-scripts build"
+  }
+}
+
   },
   "dependencies": {
     "@ai-sdk/openai": "2.0.86",

@@ -4,7 +4,7 @@ export const maxDuration = 30
 
 export async function POST(req: Request) {
   try {
-    console.log("[v0] Chat API called")
+    // Use a proper logging library instead
     const supabase = await createClient()
 
     const {

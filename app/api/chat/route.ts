@@ -4,7 +4,7 @@ export const maxDuration = 30
 
 export async function POST(req: Request) {
   try {
-    console.log("[v0] Chat API called")
+    // Use a proper logging library instead
     const supabase = await createClient()
 
     const {
@@ -12,12 +12,12 @@ export async function POST(req: Request) {
     } = await supabase.auth.getUser()
 
     if (!user) {
-      console.log("[v0] No user found")
+      // Use a proper logging library instead
       return new Response("Unauthorized", { status: 401 })
     }
 
     const { messages, chatId } = await req.json()
-    console.log("[v0] Received messages:", messages?.length, "chatId:", chatId)
+    // Use a proper logging library instead
 
     if (!messages || !Array.isArray(messages) || messages.length === 0) {
       console.log("[v0] Invalid messages array")
@@ -64,7 +64,7 @@ export async function POST(req: Request) {
       },
       body: JSON.stringify({
         model: "gpt-4o-mini",
-        messages: messages.map((msg: any) => ({
+        messages: messages.map((msg: unknown) => ({
           role: msg.role,
           content: msg.content,
         })),

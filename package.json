@@ -6,12 +6,9 @@
     "build": "next build",
     "dev": "next dev",
     "lint": "eslint .",
-    "start": "next start"
-    "type-check": "tsc --noEmit",
-  }
-}
-
-  },
+    "start": "next start",
+    "type-check": "tsc --noEmit"
+},
   "dependencies": {
     "@ai-sdk/openai": "2.0.86",
     "@aws-sdk/credential-providers": "latest",
